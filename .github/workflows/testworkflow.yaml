@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: create a file on the runner
-        run: mkdir testapp
-      - name: display the command 
-        run: echo "this is a learning workflow. I am learning how to create a workflow in github actions"
+        uses: actions/checkout@v4
+      - name: install terraform
+        uses: hashicorp/setup-terraform@v1
+        with:
+          terraform_version: 1.14.6 

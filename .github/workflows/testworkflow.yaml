@@ -14,5 +14,5 @@ jobs:
     steps:
       - name: create a file on the runner
         run: mkdir testapp
-      - name: install maven
-        run: sudo apt-get install maven -y
+      - name: display the command 
+        run: echo "i am learning github actions"

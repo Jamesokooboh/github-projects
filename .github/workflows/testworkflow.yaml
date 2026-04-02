@@ -15,4 +15,4 @@ jobs:
       - name: create a file on the runner
         run: mkdir testapp
       - name: display the command 
-        run: echo "i am learning github actions"
+        run: echo "this is a learning workflow. I am learning how to create a workflow in github actions"
